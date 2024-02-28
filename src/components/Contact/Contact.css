@@ -1,0 +1,67 @@
+.contact-form {
+  /* padding: 0 3rem 0 15rem; */
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-right {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex: 1;
+}
+
+.c-right > form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.c-right .user {
+  width: 20rem;
+  height: 2rem;
+  padding: 0.3em;
+  outline: none;
+  border: 2px solid var(--orange);
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 4rem !important;
+}
+
+.c-blur1 {
+  top: 1rem;
+  left: 8rem;
+}
+
+#spacebottom{
+    margin-bottom: 2%;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form {
+    padding: 0;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 8em;
+    margin-top: 60px;
+  }
+  .contact-form .w-left{
+    flex: unset;
+    margin-bottom: 8%;
+    margin-top: 10%;
+  }
+
+  .awesome{
+    padding-left: 20px;
+  }
+  .c-right .user {
+    width: 16rem;
+  }
+}
