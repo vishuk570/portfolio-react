@@ -1,11 +1,13 @@
 import React from 'react'
 import styles from './WhatIDo.module.css'
+import reactNative from '../../img/reactNative.png'
+import js from "../../img/js.png"
+import android from '../../img/android.png'
+import ios from '../../img/iOS.png'
 import html from "../../img/html.png"
 import css from "../../img/css.png"
 import chart from "../../img/chart.png"
-import js from "../../img/js.png"
 import bootstrap from "../../img/bootstrap.png"
-import php from "../../img/php.png"
 import heroku from "../../img/heroku.png"
 import git from "../../img/git.png"
 import firebase from "../../img/firebase.png"
@@ -20,31 +22,33 @@ import cpp from "../../img/cpp.png"
 import github from "../../img/github.png"
 import express from "../../img/express.png"
 import working from "../../img/working.png"
-// import Project from '../Project/Project';
-// import ContactScreen from '../ContactScreen/ContactScreen';
-// import GitubRepos from '../GitubRepos/GitubRepos';
+import kotlin from '../../img/Kotlin.svg'
+import java from '../../img/Java.jpg'
 
 const Images = [
+    reactNative,
+    react,
+    js,
+    android,
+    ios,
+    kotlin,
+    java,
+    nodejs,
+    express,
     html,
     css,
     chart,
-    js,
     bootstrap,
-    php,
     heroku,
-    css,
     git,
     firebase,
     mongo,
     mysql,
-    nodejs,
     netlify,
     python,
-    react,
     linux,
     cpp,
     github,
-    express
 ]
 
 const WhatIDo = () => {
@@ -73,11 +77,7 @@ const WhatIDo = () => {
 
                     </div>
                 </div >
-
             </section >
-            {/* <Project />
-            <GitubRepos />
-            <ContactScreen /> */}
         </>
     )
 }

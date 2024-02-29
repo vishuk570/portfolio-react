@@ -5,19 +5,12 @@ import HeartEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import { themeContext } from "../../Context";
-import { motion } from "framer-motion";
 import Resume from './Vishu_CV.pdf';
 
 const Services = () => {
   // context
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
-
-  // transition
-  const transition = {
-    duration: 1,
-    type: "spring",
-  };
 
   return (
     <div className="services" id="services">
@@ -35,46 +28,28 @@ const Services = () => {
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       {/* right */}
-      <div className="cards" style={{width:"100%"}} >
+      <div className="cards">
         {/* first card */}
-        <motion.div
-          initial={{ left: "25rem" }}
-          whileInView={{ left: "14rem" }}
-          transition={transition}
-        >
-          <Card
-            emoji={HeartEmoji}
-            heading={"Design"}
-            detail={"Figma, native-base, CSS3, BootStrap"}
-          />
-        </motion.div>
+        <Card
+          emoji={HeartEmoji}
+          heading={"Design"}
+          detail={"Figma, native-base, CSS3, BootStrap"}
+        />
         {/* second card */}
-        <motion.div
-          initial={{ left: "-11rem", top: "12rem" }}
-          whileInView={{ left: "-4rem" }}
-          transition={transition}
-        >
-          <Card
-            emoji={Glasses}
-            heading={"Development"}
-            detail={"React-Native, Android, iOS, JavaScript, ReactJs, NodeJs, ExpressJs"}
-          />
-        </motion.div>
+        <Card
+          emoji={Glasses}
+          heading={"Development"}
+          detail={"React-Native, Android, iOS, JavaScript, ReactJs, NodeJs, ExpressJs"}
+        />
         {/* 3rd */}
-        <motion.div
-          initial={{ top: "19rem", left: "25rem" }}
-          whileInView={{ left: "12rem" }}
-          transition={transition}
-        >
-          <Card
-            emoji={Humble}
-            heading={"Deployement"}
-            detail={
-              "Git, Github, Play Store, App Store,App Center, Azure-DevOps,"
-            }
-            color="rgba(252, 166, 31, 0.45)"
-          />
-        </motion.div>
+        <Card
+          emoji={Humble}
+          heading={"Deployment"}
+          detail={
+            "Git, Github, Play Store, App Store, App Center, Firebase, Azure-DevOps,"
+          }
+          color="rgba(252, 166, 31, 0.45)"
+        />
         <div
           className="blur s-blur2"
           style={{ background: "var(--purple)" }}
