@@ -44,34 +44,44 @@ const Contact = () => {
 
     setErrors(validationErrors);
 
-    if (Object.keys(validationErrors).length === 0) {
-      try {
-        debugger;
-        const res = await fetch(
-          "https://namanmalhan-portfolio-default-rtdb.firebaseio.com/userDataRecords.json",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(formData),
-          }
-        );
+    // if (Object.keys(validationErrors).length === 0) {
+    //   try {
+    //     debugger;
+    //     const res = await fetch(
+    //       "https://namanmalhan-portfolio-default-rtdb.firebaseio.com/userDataRecords.json",
+    //       {
+    //         method: "POST",
+    //         headers: {
+    //           "Content-Type": "application/json",
+    //         },
+    //         body: JSON.stringify(formData),
+    //       }
+    //     );
 
-        if (res.ok) {
-          setFormData({
-            name: "",
-            email: "",
-            message: "",
-          });
-          alert("Thank you for your valuable time ❤️. I'll get back to you shortly 💯.");
-        } else {
-          alert("Failed to store data. Please try again.");
-        }
-      } catch (error) {
-        console.error("Error:", error);
-        alert("An error occurred. Please try again later.");
-      }
+    //     if (res.ok) {
+    //       setFormData({
+    //         name: "",
+    //         email: "",
+    //         message: "",
+    //       });
+    //       alert("Thank you for your valuable time ❤️. I'll get back to you shortly 💯.");
+    //     } else {
+    //       alert("Failed to store data. Please try again.");
+    //     }
+    //   } catch (error) {
+    //     console.error("Error:", error);
+    //     alert("An error occurred. Please try again later.");
+    //   }
+    // }
+    
+    if (Object.keys(validationErrors).length === 0) {
+      const subject = encodeURIComponent("New Contact Form Submission");
+      const body = encodeURIComponent(
+        `Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0AMessage: ${formData.message}`
+      );
+      const mailtoLink = `mailto:vishuk570@gmail.com?subject=${subject}&body=${body}`;
+
+      window.location.href = mailtoLink;
     }
   };
 
