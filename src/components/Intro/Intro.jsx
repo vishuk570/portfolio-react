@@ -9,7 +9,8 @@ import crown from "../../img/crown.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
+// import Instagram from "../../img/instagram.png";
+import xlogo from '../../img/xlogo.png'
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
@@ -57,7 +58,7 @@ const Intro = () => {
 
           <img src={Github} style={{width:'100px'}} alt="" onClick={()=> window.open("https://github.com/vishuk570", "_blank")} />
           <img src={LinkedIn} style={{width:'90px'}} alt=""  onClick={()=> window.open("https://www.linkedin.com/in/vishu-kumar/", "_blank")} />
-          <img src={Instagram} style={{width:'90px'}} alt="" onClick={()=> window.open("https://www.instagram.com/mr._vishu_saini/", "_blank")}/>
+          <img src={xlogo} style={{width:'90px'}} alt="" onClick={()=> window.open("https://www.x.com/mr._vishu_saini/", "_blank")}/>
         </div>
       </div>
       {/* right image side */}
