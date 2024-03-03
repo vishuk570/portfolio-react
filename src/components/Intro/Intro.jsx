@@ -57,8 +57,8 @@ const Intro = () => {
         <div className="i-icons">
 
           <img src={Github} style={{width:'100px'}} alt="" onClick={()=> window.open("https://github.com/vishuk570", "_blank")} />
-          <img src={LinkedIn} style={{width:'90px'}} alt=""  onClick={()=> window.open("https://www.linkedin.com/in/vishu-kumar/", "_blank")} />
-          <img src={xlogo} style={{width:'90px'}} alt="" onClick={()=> window.open("https://www.x.com/mr._vishu_saini/", "_blank")}/>
+          <img src={LinkedIn} style={{width:'90px'}} alt=""  onClick={()=> window.open("https://www.linkedin.com/in/vishu-kumar-766a73194/", "_blank")} />
+          <img src={xlogo} style={{width:'90px'}} alt="" onClick={()=> window.open("https://twitter.com/Mr_vishu_saini", "_blank")}/>
         </div>
       </div>
       {/* right image side */}

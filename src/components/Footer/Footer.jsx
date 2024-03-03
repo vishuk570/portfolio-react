@@ -19,8 +19,8 @@ const Footer = () => {
         <span style={{marginTop:'100px'}}>vishuk570@gmail.com</span>
       <img src={Dog} alt="" style={{height:"35vh"}}></img>
         <div className="f-icons" style={{marginTop:'150px'}}>
-          <LinkdIn color="white" size={"3rem"} onClick={()=> window.open("https://www.linkedin.com/in/vishu-kumar/", "_blank")}/>
-          <Twitter color="white" size={"3rem"} onClick={()=> window.open("https://www.x.com/vishu_saini/", "_blank")}/>
+          <LinkdIn color="white" size={"3rem"} onClick={()=> window.open("https://www.linkedin.com/in/vishu-kumar-766a73194/", "_blank")}/>
+          <Twitter color="white" size={"3rem"} onClick={()=> window.open("https://twitter.com/Mr_vishu_saini", "_blank")}/>
           <Gitub color="white" size={"3rem"} onClick={()=> window.open("https://github.com/vishuk570", "_blank")} />
         </div>
       </div>
